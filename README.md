@@ -13,6 +13,9 @@ Using a new [tile placement API](https://developer.android.com/reference/android
 # [For Kotlin](https://github.com/LeoAndo/android-quick-settings-placement-api-samples/tree/main/TileServiceKotlinSample)
 - material3
 
+# [For Java](https://github.com/LeoAndo/android-quick-settings-placement-api-samples/tree/main/TileServiceJavaSample)
+- material2
+
 # capture Pixel 4 API Level Tiramisu
 
 | startService(API Level 31) | requestAddTileService(API Level 32) |
