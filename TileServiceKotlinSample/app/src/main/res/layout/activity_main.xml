@@ -13,12 +13,18 @@
         android:id="@+id/buttonStartService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start TileService" />
+        android:text="start TileService (API 31)" />
 
     <Button
         android:id="@+id/buttonRequestAddTileService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="requestAddTileService" />
+        android:text="requestAddTileService (API 32+)" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
