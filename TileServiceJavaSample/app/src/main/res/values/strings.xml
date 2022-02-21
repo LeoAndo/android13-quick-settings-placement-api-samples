@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TileServiceJavaSample</string>
+    <string name="my_default_tile_label">Basic Tile Service</string>
 </resources>
