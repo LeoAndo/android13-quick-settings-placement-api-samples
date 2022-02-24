@@ -1,6 +1,5 @@
 package com.example.tileservicejavasample;
 
-import android.annotation.SuppressLint;
 import android.app.StatusBarManager;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         var binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        @SuppressLint("WrongConstant") var statusBarManager = (StatusBarManager) getSystemService(STATUS_BAR_SERVICE);
+        var statusBarManager = getSystemService(StatusBarManager.class);
         Log.d(MyQSTileService.TAG, "onCreate: statusBarManager $statusBarManager");
 
         var resultSuccessExecutor = new Executor() {
