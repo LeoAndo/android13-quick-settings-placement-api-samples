@@ -1,6 +1,5 @@
 package com.example.tileservicekotlinsample
 
-import android.annotation.SuppressLint
 import android.app.StatusBarManager
 import android.content.ComponentName
 import android.content.Intent
@@ -16,14 +15,13 @@ import java.util.concurrent.Executor
 internal class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    @SuppressLint("WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val statusBarManager = getSystemService(STATUS_BAR_SERVICE) as? StatusBarManager
+        val statusBarManager: StatusBarManager = getSystemService(StatusBarManager::class.java)
         Log.d(TAG, "onCreate: statusBarManager $statusBarManager")
 
         val resultSuccessExecutor = Executor {
@@ -39,7 +37,7 @@ internal class MainActivity : AppCompatActivity() {
         }
         binding.buttonRequestAddTileService.setOnClickListener {
             Log.d(TAG, "onclick buttonRequestAddTileService")
-            statusBarManager?.requestAddTileService(
+            statusBarManager.requestAddTileService(
                 ComponentName(
                     this,
                     MyQSTileService::class.java
