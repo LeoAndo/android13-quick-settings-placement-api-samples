@@ -18,6 +18,6 @@ Using a new [tile placement API](https://developer.android.com/reference/android
 
 # capture Pixel 4 API Level Tiramisu
 
-| startService(API Level 31) | requestAddTileService(API Level 32) |
+| startService(API Level 31) | requestAddTileService(API Level Tiramisu) |
 |:---|:---:|
 |<img src="https://github.com/LeoAndo/android-quick-settings-placement-api-samples/blob/main/capture_startTileService.gif" width=320 /> |<img src="https://github.com/LeoAndo/android-quick-settings-placement-api-samples/blob/main/capture_requestAddTileService.gif" width=320 /> |
