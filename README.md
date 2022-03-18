@@ -5,8 +5,6 @@ Using a new [tile placement API](https://developer.android.com/reference/android
 [about Quick Settings placement API](https://developer.android.com/about/versions/13/features#quick-settings)<br>
 [about TileService API](https://developer.android.com/reference/android/service/quicksettings/TileService)<br>
 
-[If you have any questions, please contact discussions](https://github.com/LeoAndo/android-quick-settings-placement-api-samples/discussions)
-
 # dev memo
 
 [RequestResult not found!!](https://developer.android.com/reference/android/app/StatusBarManager.RequestResult)<br>
